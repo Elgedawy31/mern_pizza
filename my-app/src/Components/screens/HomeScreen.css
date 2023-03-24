@@ -1,0 +1,161 @@
+.all{
+
+    padding: 0 80px;
+
+}
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.all .filter{
+    margin-top: 50px;
+}
+.screen{
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
+    gap: 20px;
+
+}
+.screen .box{
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    cursor: pointer;
+
+
+
+}
+.screen .box h3{
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.screen .box img{
+    width: 250px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+
+.screen .box .kalam{
+    display: flex;
+    margin-top: 40px;
+    /* text-align: center; */
+    justify-content: space-around;
+}
+
+.screen .box .kalam span:first-child{
+    margin-right: 30px;
+}
+
+.screen .box .inputs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.screen .box .inputs select {
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    color: #333;
+    /* margin-right: 60px; */
+    width: 150px;
+}
+
+.screen .box .last{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 15px;
+}
+
+.btn{
+    display: block;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 9px;
+    cursor: pointer;
+}
+
+.show{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0,0, 0.2);
+    z-index: 10;
+}
+.hide{
+    display: none;
+}
+
+h1 div{
+    z-index: 1000000000000000;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    border-radius: 6px;
+}
+
+.hi {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.hi h2{
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.hi img{
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    background-size: contain;
+}
+
+.hi p{
+    font-size: 15px;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+@media (max-width:676px){
+
+    .screen{
+        padding: 0 20px;
+        grid-template-columns: repeat(auto-fill , minmax(1fr , 1fr));
+
+    
+    }
+    .screen .box {
+        padding: 10px 0px;
+    }
+    .screen .box h3 {
+        font-size: 14px;
+    }
+    .screen .box img {
+        width: 200px;
+        height: 150px;
+    }
+
+}

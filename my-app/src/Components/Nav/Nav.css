@@ -1,0 +1,53 @@
+.nav{
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / 10%)
+  }
+
+
+
+  .nav a:hover{
+    text-decoration: underline;
+  }
+  
+  .nav a.alone{
+    font-size: 22px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .nav a{
+    color:#333;
+    text-decoration: none;
+  }
+
+  .nav .left{
+    flex:3;
+  }
+    
+  .nav .right {
+    display: flex;
+    flex: 1;
+  }
+  
+  .nav .right a:first-of-type{
+    margin-right: 20px;
+  }
+
+  @media (max-width:767px) {
+
+    .nav{
+      padding:10px 20px;
+    }
+    
+
+    .nav a.alone{
+      font-size: 15px;
+    }
+
+    .nav .right a:first-of-type{
+      margin-right: 8px;
+    }
+
+  }
